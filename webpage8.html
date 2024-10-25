@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhyan Ranjan Sahoo - Full Stack Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+            animation: bgShift 10s infinite alternate;
+        }
+
+        @keyframes bgShift {
+            0% { background-color: #f5f7fa; }
+            100% { background-color: #c3cfe2; }
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(to right, #673ab7, #512da8);
+            color: white;
+            padding: 100px 0;
+            position: relative;
+            animation: fadeInHeader 2s ease-in-out;
+        }
+
+        @keyframes fadeInHeader {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin: 20px 0;
+            letter-spacing: 4px;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            animation: bounceInName 1.5s ease-out infinite alternate;
+        }
+
+        @keyframes bounceInName {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.05); }
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            animation: fadeInText 2s ease-in;
+        }
+
+        section {
+            margin: 40px auto;
+            max-width: 900px;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInSection 2s ease;
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            color: #673ab7;
+        }
+
+        p, ul {
+            line-height: 1.8;
+            color: #333;
+        }
+
+        a {
+            color: #512da8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .skills {
+            margin: 40px 0;
+        }
+
+        .skill-bar {
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .skill-bar span {
+            display: block;
+            height: 30px;
+            background: #512da8;
+            border-radius: 10px;
+            width: 0;
+            animation: fillSkillBar 2s forwards;
+        }
+
+        @keyframes fillSkillBar {
+            to { width: 85%; }
+        }
+
+        footer {
+            text-align: center;
+            margin: 30px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dhyan Ranjan Sahoo 14 </h1>
+    <p>Full Stack Developer</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>I'm Dhyan Ranjan Sahoo, a passionate Full Stack Developer with a focus on creating dynamic, user-friendly websites and applications. I'm currently in my first year of B.Tech in Computer Science at <strong>Gandhi Engineering College</strong> (Expected Graduation: 2028). Despite being a fresher, I have significant experience as a freelance developer, providing solutions on platforms like Fiverr and Upwork. I thrive on transforming ideas into scalable and efficient solutions.</p>
+    <p>My expertise includes front-end and back-end technologies, and I enjoy working with clients to solve real-world problems using modern web technologies.</p>
+</section>
+
+<section class="experience">
+    <h2>Experience</h2>
+    <ul>
+        <li><strong>Freelance Full Stack Developer Present</strong></li>
+        <li>Worked as a freelancer on <a href="https://fiverr.com">Fiverr</a> and <a href="https://upwork.com">Upwork</a>, delivering top-rated web development projects to clients worldwide.</li>
+        <li>Developed responsive, user-centric web applications with a focus on performance and security.</li>
+        <li>Provided full-stack solutions, including database design, API integration, and front-end development using React, Node.js, and MongoDB.</li>
+
+        
+        <li>Collaborated with a development team on various internal projects, enhancing user interfaces and optimizing backend performance for web applications.</li>
+    </ul>
+</section>
+
+<section class="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li><a href="https://github.com/Dhyan1414/project1" target="_blank"><strong>E-Commerce Platform</strong></a> - A full-featured e-commerce platform with payment gateway integration, shopping cart functionality, and user authentication.</li>
+        <li><a href="https://github.com/Dhyan1414/project2" target="_blank"><strong>Blog Application</strong></a> - A blog application that allows users to create, edit, and manage posts with an intuitive user interface and comment section.</li>
+        <li><a href="https://github.com/Dhyan1414/project3" target="_blank"><strong>Portfolio Website</strong></a> - Personal portfolio site with a focus on clean design, responsiveness, and showcasing skills, projects, and testimonials.</li>
+        <li><a href="https://github.com/Dhyan1414/project4" target="_blank"><strong>Social Media Dashboard</strong></a> - A social media metrics dashboard integrating APIs for tracking engagement and user statistics.</li>
+    </ul>
+</section>
+
+<section class="skills">
+    <h2>Skills</h2>
+    <p>HTML/CSS</p>
+    <div class="skill-bar">
+        <span style="background: #673ab7; width: 90%;"></span>
+    </div>
+    <p>JavaScript</p>
+    <div class="skill-bar">
+        <span style="background: #ff9800; width: 85%;"></span>
+    </div>
+    <p>React</p>
+    <div class="skill-bar">
+        <span style="background: #2196f3; width: 80%;"></span>
+    </div>
+    <p>Node.js</p>
+    <div class="skill-bar">
+        <span style="background: #4caf50; width: 75%;"></span>
+    </div>
+    <p>MongoDB</p>
+    <div class="skill-bar">
+        <span style="background: #ff5722; width: 70%;"></span>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:dhyanranjansahoo@gmail.com">dhyanranjansahoo@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/dhyan-ranjan-sahoo-35a68b2bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Dhyan Ranjan Sahoo</a></p>
+    <p>GitHub: <a href="https://github.com/Dhyan1414" target="_blank">github.com/Dhyan1414</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/dr_14__?igsh=MWs1ZjE3NnFoZHZjYw==" target="_blank">Instagram</a></p>
+    <p>WhatsApp: <a href="https://wa.me/919124077026" target="_blank">Message on WhatsApp</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Dhyan Ranjan Sahoo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
